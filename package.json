@@ -24,9 +24,7 @@
  },
  "scripts": {
   "build": "gulp build",
-  "start": "gulp start",
-  "webp": "gulp webp",
-  "sprite": "gulp sprite"
+  "start": "gulp start"
  },
  "repository": {
   "type": "git",
