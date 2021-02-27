@@ -10,6 +10,7 @@ const server = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
+const imageminJpegtran = require('imagemin-jpegtran');
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const posthtml = require("gulp-posthtml");
@@ -60,7 +61,7 @@ gulp.task("images", () => {
 		.pipe(
 			imagemin([
 				imagemin.optipng({ optimizationLevel: 3 }),
-				imagemin.jpegtran({ progressive: true }),
+				imageminJpegtran(),
 				imagemin.svgo(),
 			])
 		)
