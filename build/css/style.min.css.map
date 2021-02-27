@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.less"],"names":[],"mappings":"AAEA,E,CACE,U","file":"style.min.css","sourcesContent":["@header-color: blue;\n\nh1 {\n  color: @header-color;\n}\n"]}

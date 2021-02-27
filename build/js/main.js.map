@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","sources":["source/js/test.js","source/js/main.js"],"sourcesContent":["export const log = () =>\n{\n\tconsole.log('Hello World!!!');\n}\n","import {log} from './test';\n\nlog();\n"],"names":[],"mappings":";;;CAAO,MAAM,GAAG,GAAG;CACnB;CACA,CAAC,OAAO,CAAC,GAAG,CAAC,gBAAgB,CAAC,CAAC;CAC/B;;CCDA,GAAG,EAAE,CAAC;;;;"}
