@@ -2,6 +2,8 @@ header
 {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
@@ -48,6 +50,7 @@ header
   width: 88.29%;
   .centered();
   margin-top: 202px;
+  margin-bottom: 50px;
 }
 
 .header__main-title
@@ -108,4 +111,44 @@ header
   top: 20px;
   right: 20px;
   z-index: -1;
+}
+
+.header__bottom
+{
+  width: 88.29%;
+  .centered();
+  margin-top: auto;
+  padding: 0 0 57px 5px;
+}
+
+.header__bottom-anchor
+{
+  display: flex;
+
+  svg
+  {
+	margin-right: 12px;
+
+	fill: none;
+
+	.arrow-down
+	{
+	  transform: translate(10px, 0);
+	}
+
+	.arrow-down-big
+	{
+	  transform: translate(0, 13px);
+	}
+  }
+
+  span
+  {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: -0.01px;
+
+	color: @accent-red;
+  }
 }
