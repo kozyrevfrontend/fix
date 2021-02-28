@@ -13,6 +13,10 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div class="visually-hidden">
+	<include src="build/img/sprite_auto.svg"></include>
+</div>
+
 <header>
 	<div class="header__top">
 		<div class="header__logo logo">
@@ -22,7 +26,7 @@
 		</div>
 		<a class="header__contacts-link" href="#footer">
 			<svg width="26" height="26">
-				<use href="img/sprite_auto.svg#icon-phone"></use>
+				<use xlink:href="#icon-phone"></use>
 			</svg>
 			<span>Контакты</span>
 		</a>
@@ -39,9 +43,9 @@
 	</div>
 	<div class="header__bottom">
 		<a class="header__bottom-anchor anchor" href="#">
-			<svg width="41" height="30">
-				<use href="img/sprite_auto.svg#icon-arrow-down"></use>
-				<use href="img/sprite_auto.svg#icon-arrow-down-big"></use>
+			<svg width="41" height="30" fill="none">
+				<use xlink:href="#icon-arrow-down"></use>
+				<use xlink:href="#icon-arrow-down-big"></use>
 			</svg>
 			<span>Листайте вниз,<br /> чтобы ничего не упустить</span>
 		</a>
@@ -56,9 +60,10 @@
 			</div>
 			<a class="video__link" href="https://www.youtube.com/watch?v=TEBpc9Q9TV8"></a>
 			<button class="video__button" aria-label="Открыть видео">
-				<svg width="250" height="250">
-					<use href="img/sprite_auto.svg#icon-circle"></use>
-					<use href="img/sprite_auto.svg#icon-play"></use>
+				<svg width="254" height="254">
+					<use xlink:href="#icon-circle"></use>
+					<use xlink:href="#icon-play"></use>
+					<use xlink:href="#icon-play-big"></use>
 				</svg>
 			</button>
 		</div>
