@@ -10,6 +10,9 @@ header
 
 .header__top
 {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   justify-content: space-between;
   width: 88.29%;
@@ -110,7 +113,6 @@ header
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: -1;
 }
 
 .header__bottom
@@ -124,12 +126,15 @@ header
 .header__bottom-anchor
 {
   display: flex;
+  width: 250px;
 
   svg
   {
 	margin-right: 12px;
 
 	fill: none;
+
+	transition: transform 0.4s;
 
 	.arrow-down
 	{
@@ -150,5 +155,14 @@ header
 	letter-spacing: -0.01px;
 
 	color: @accent-red;
+  }
+
+  &:hover,
+  &:focus
+  {
+	svg
+	{
+	  transform: scaleX(0.73);
+	}
   }
 }
