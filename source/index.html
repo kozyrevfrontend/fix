@@ -95,40 +95,43 @@
 		</ul>
 	</section>
 	<section class="designs">
-		<h2 class="designs__title">3 стиля интерьера</h2>
-		<p class="designs__description">Скандинавский, классический и эко-стиль</p>
-		<ul class="designs__list slider__container">
-			<li class="designs__item slider__item">
-				<h3 class="visually-hidden">Классический стиль</h3>
-				<figure class="designs__img">
-					<picture>
-						<source type="image/webp" srcset="img/interior-classic@1x.webp 1x, img/interior-classic@2x.webp 2x">
-						<img src="img/interior-classic@1x.jpg" srcset="img/interior-classic@2x.jpg 2x" alt="Ролик о компании" width="750" height="500" loading="lazy">
-					</picture>
-					<figcaption>Интерьер гостинной в классическом стиле</figcaption>
-				</figure>
-			</li>
-			<li class="designs__item slider__item">
-				<h3 class="visually-hidden">Классический стиль</h3>
-				<figure class="designs__img">
-					<picture>
-						<source type="image/webp" srcset="img/interior-scandi@1x.webp 1x, img/interior-scandi@2x.webp 2x">
-						<img src="img/interior-scandi@1x.jpg" srcset="img/interior-scandi@2x.jpg 2x" alt="Ролик о компании" width="750" height="500" loading="lazy">
-					</picture>
-					<figcaption>Кафельная плитка в ванной комнате в скандинавском стиле</figcaption>
-				</figure>
-			</li>
-			<li class="designs__item slider__item">
-				<h3 class="visually-hidden">Классический стиль</h3>
-				<figure class="designs__img">
-					<picture>
-						<source type="image/webp" srcset="img/interior-eco@1x.webp 1x, img/interior-eco@2x.webp 2x">
-						<img src="img/interior-eco@1x.jpg" srcset="img/interior-eco@2x.jpg 2x" alt="Ролик о компании" width="750" height="500" loading="lazy">
-					</picture>
-					<figcaption>Интерьер кухни в классическом стиле</figcaption>
-				</figure>
-			</li>
-		</ul>
+		<div class="designs__wrapper">
+			<h2 class="designs__title">3 стиля интерьера</h2>
+			<p class="designs__description">Скандинавский, классический и эко-стиль</p>
+		</div>
+		<div class="designs__container slider__wrapper">
+			<ul class="designs__list slider__container">
+				<li class="designs__item slider__item">
+					<h3 class="visually-hidden">Классический стиль</h3>
+					<figure class="designs__img">
+						<picture>
+							<source type="image/webp" srcset="img/interior-classic@1x.webp 1x, img/interior-classic@2x.webp 2x">
+							<img src="img/interior-classic@1x.jpg" srcset="img/interior-classic@2x.jpg 2x" alt="Классический стиль" width="750" height="500" loading="lazy">
+						</picture>
+						<figcaption>Интерьер гостинной в классическом стиле</figcaption>
+					</figure>
+				</li>
+				<li class="designs__item slider__item">
+					<h3 class="visually-hidden">Скандинавский стиль</h3>
+					<figure class="designs__img">
+						<picture>
+							<source type="image/webp" srcset="img/interior-scandi@1x.webp 1x, img/interior-scandi@2x.webp 2x">
+							<img src="img/interior-scandi@1x.jpg" srcset="img/interior-scandi@2x.jpg 2x" alt="Скандинавский стиль" width="750" height="500" loading="lazy">
+						</picture>
+						<figcaption>Кафельная плитка в ванной комнате в скандинавском стиле</figcaption>
+					</figure>
+				</li>
+				<li class="designs__item slider__item">
+					<h3 class="visually-hidden">Эко-стиль</h3>
+					<figure class="designs__img">
+						<picture>
+							<source type="image/webp" srcset="img/interior-eco@1x.webp 1x, img/interior-eco@2x.webp 2x">
+							<img src="img/interior-eco@1x.jpg" srcset="img/interior-eco@2x.jpg 2x" alt="Эко-стиль" width="750" height="500" loading="lazy">
+						</picture>
+						<figcaption>Интерьер кухни в классическом стиле</figcaption>
+					</figure>
+				</li>
+			</ul>
 		<div class="slider__controls">
 			<button class="slider__btn slider__btn--left" aria-label="Предыдущий слайд">
 				<svg width="30" height="50">
@@ -140,6 +143,7 @@
 					<use xlink:href="#icon-arrow-right"></use>
 				</svg>
 			</button>
+		</div>
 		</div>
 	</section>
 </main>

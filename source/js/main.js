@@ -1,3 +1,4 @@
-import {log} from './test';
+import Slider from './components/slider';
 
-log();
+const slider = new Slider(document.querySelector('.designs'));
+slider.init();
