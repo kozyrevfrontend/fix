@@ -146,6 +146,35 @@
 		</div>
 		</div>
 	</section>
+	<section class="feedback">
+		<form method="post">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<p class="feedback__slogan"><b>Узнайте о запуске сервиса первым</b></p>
+			<p class="feedback__promo">
+				<svg width="46" height="69">
+					<use xlink:href="#icon-door"></use>
+				</svg>
+				<span class="feedback__promo-text">Первым 10 клиентам стальная входная дверь в подарок</span>
+			</p>
+			<p>
+				<label class="visually-hidden" for="user-name">Введите ваше имя:</label>
+				<input type="text" name="user-name" id="user-name" placeholder="Имя и фамилия*" required>
+				<span>Имя и фамилия</span>
+			</p>
+			<p>
+				<label class="visually-hidden" for="user-email">Введите адрес электронной почты:</label>
+				<input type="email" name="user-email" id="user-email" placeholder="E-mail адрес*" required>
+				<span>E-mail адрес</span>
+			</p>
+			<p>
+				<label class="visually-hidden" for="user-phone">Введите ваш телефон:</label>
+				<input type="number" name="user-phone" id="user-phone" placeholder="Телефон">
+			</p>
+			<button class="feedback__button button" type="submit"><span>Подписаться</span></button>
+			<p class="feedback__info">* Обязательное поле для заполнения</p>
+			<a class="feedback__link" href="#">Политика конфеденциальности</a>
+		</form>
+	</section>
 </main>
 <script src="js/main.js"></script>
 </body>
