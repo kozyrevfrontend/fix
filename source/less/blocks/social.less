@@ -1,0 +1,44 @@
+.social__list
+{
+  .list-reset();
+
+  display: flex;
+  justify-content: center;
+}
+
+.social__item
+{
+  margin: 0 15px 32px;
+
+  &:first-child
+  {
+	margin-left: 0;
+  }
+
+  &:last-child
+  {
+	margin-right: 0;
+  }
+}
+
+.social__link
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  background-color: @accent;
+
+  &:hover,
+  &:focus
+  {
+	background-color: @accent-hover;
+
+	box-shadow: 0px 15px 20px fade(@accent, 70%);
+
+	transition: background-color 0.4s,
+	box-shadow 0.4s;
+  }
+}
