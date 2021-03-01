@@ -35,14 +35,14 @@
 		<h1 class="header__main-title">Ремонт квартир в типовых домах</h1>
 		<p class="header__main-description">Готовый дизайн-проект, работы и метериалы за 3 месяца от 610 т.р.</p>
 		<div class="header__main-wrapper">
-			<a class="header__main-link button" href="#">
+			<a class="header__main-link button" href="#feedback">
 				<span>Узнайте о запуске первым</span>
 			</a>
 			<span class="header__main-info">Старт весной 2016</span>
 		</div>
 	</div>
 	<div class="header__bottom">
-		<a class="header__bottom-anchor anchor" href="#">
+		<a class="header__bottom-anchor anchor" href="#main">
 			<svg width="41" height="35">
 				<use class="arrow-down" xlink:href="#icon-arrow-down"></use>
 				<use class="arrow-down-big" xlink:href="#icon-arrow-down-big"></use>
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 </header>
-<main>
+<main id="main">
 	<section class="advantages">
 		<h2 class="visually-hidden">Наши преимущества</h2>
 		<p class="advantages__slogan"><b>FIX Ремонт — это легко</b></p>
@@ -146,7 +146,7 @@
 		</div>
 		</div>
 	</section>
-	<section class="feedback">
+	<section class="feedback" id="feedback">
 		<form method="post">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<p class="feedback__slogan"><b>Узнайте о запуске сервиса первым</b></p>
@@ -156,17 +156,17 @@
 				</svg>
 				<span class="feedback__promo-text">Первым 10 клиентам стальная входная дверь в подарок</span>
 			</p>
-			<p>
+			<p class="feedback__wrapper">
 				<label class="visually-hidden" for="user-name">Введите ваше имя:</label>
 				<input type="text" name="user-name" id="user-name" placeholder="Имя и фамилия*" required="">
 				<span>Имя и фамилия</span>
 			</p>
-			<p>
+			<p class="feedback__wrapper">
 				<label class="visually-hidden" for="user-email">Введите адрес электронной почты:</label>
 				<input type="email" name="user-email" id="user-email" placeholder="E-mail адрес*" required="">
 				<span>E-mail адрес</span>
 			</p>
-			<p>
+			<p class="feedback__wrapper">
 				<label class="visually-hidden" for="user-phone">Введите ваш телефон:</label>
 				<input type="number" name="user-phone" id="user-phone" placeholder="Телефон">
 			</p>
