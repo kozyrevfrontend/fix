@@ -4,10 +4,13 @@
   padding: 70px 0 0;
   form
   {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;;
 	width: 984px;
+	min-height: 647px;
 	.centered();
 	padding: 0 0 30px 0;
 
@@ -147,5 +150,40 @@
   &:focus
   {
 	color: @accent-hover;
+  }
+}
+
+.feedback__success
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  svg
+  {
+	fill: none;
+
+	margin: 0 0 20px;
+  }
+
+  p
+  {
+	width: 300px;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.65px;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: @text-dark;
   }
 }
