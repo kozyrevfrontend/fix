@@ -208,3 +208,42 @@
 	text-align: center;
   }
 }
+
+@media (max-width: 767px)
+{
+  .feedback
+  {
+	form
+	{
+	  input
+	  {
+		width: 100%;
+	  }
+	}
+  }
+
+  .feedback__slogan
+  {
+	width: 100%;
+	padding-top: 10px;
+
+	font-size: 32px;
+	line-height: 40px;
+
+	color: @text-dark;
+
+	background-color: #ffffff;
+
+	transform: translateY(0);
+  }
+
+  .feedback__promo
+  {
+	flex-direction: column;
+
+	span
+	{
+	  text-align: center;
+	}
+  }
+}
