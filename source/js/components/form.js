@@ -16,7 +16,7 @@ export default class Form
 		});
 	}
 
-	submitHandler ()
+	submitHandler()
 	{
 		this.deleteChildrenElements(this.form);
 		this.renderTemplate(this.form, this.successTemplate());
@@ -27,7 +27,7 @@ export default class Form
 		parentElement.insertAdjacentHTML(place, template);
 	}
 
-	deleteChildrenElements (list)
+	deleteChildrenElements(list)
 	{
 		while (list.firstChild)
 		{
@@ -35,7 +35,7 @@ export default class Form
 		}
 	}
 
-	successTemplate ()
+	successTemplate()
 	{
 		return (
 			`<p class="feedback__slogan"><b>Узнайте о запуске сервиса первым</b></p>

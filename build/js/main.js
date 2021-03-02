@@ -15,7 +15,8 @@
 			this.moveRight = this.moveRight.bind(this);
 		}
 
-		init() {
+		init()
+		{
 			this.setActiveSlide();
 			this.slidesWidth = this.slides[this.activeSlideIndex].offsetWidth;
 			this.move();
@@ -23,20 +24,25 @@
 			this.buttonRight.addEventListener('click', this.moveRight);
 		}
 
-		setActiveSlide() {
+		setActiveSlide()
+		{
 			this.slides[this.activeSlideIndex].classList.add("slider__item--active", "designs__item--active");
 		}
 
-		removeActiveSlide() {
+		removeActiveSlide()
+		{
 			this.slides[this.activeSlideIndex].classList.remove("slider__item--active", "designs__item--active");
 		}
 
-		move() {
+		move()
+		{
 			this.sliderContainer.style.transform = `translateX(-${this.slidesWidth * this.activeSlideIndex}px)`;
 		}
 
-		moveRight() {
-			if (this.activeSlideIndex === 0) {
+		moveRight()
+		{
+			if (this.activeSlideIndex === 0)
+			{
 				this.buttonLeft.disabled = false;
 			}
 
@@ -46,14 +52,17 @@
 			this.move();
 
 
-			if (this.activeSlideIndex === this.slidesCount - 1) {
+			if (this.activeSlideIndex === this.slidesCount - 1)
+			{
 				this.buttonRight.disabled = true;
 				return;
 			}
 		}
 
-		moveLeft() {
-			if (this.activeSlideIndex === this.slidesCount - 1) {
+		moveLeft()
+		{
+			if (this.activeSlideIndex === this.slidesCount - 1)
+			{
 				this.buttonRight.disabled = false;
 			}
 
@@ -62,7 +71,8 @@
 			this.setActiveSlide();
 			this.move();
 
-			if (this.activeSlideIndex === 0) {
+			if (this.activeSlideIndex === 0)
+			{
 				this.buttonLeft.disabled = true;
 			}
 		}
@@ -79,14 +89,17 @@
 			this.setupVideo = this.setupVideo.bind(this);
 		}
 
-		init() {
+		init()
+		{
 			this.setupVideo();
 		}
 
-		setupVideo() {
+		setupVideo()
+		{
 			this.link.removeAttribute('href');
 
-			this.button.addEventListener('click', () => {
+			this.button.addEventListener('click', () =>
+			{
 				const iframe = this.createIframe();
 				this.link.remove();
 				this.button.remove();
@@ -94,7 +107,8 @@
 			});
 		}
 
-		createIframe() {
+		createIframe()
+		{
 			const iframe = document.createElement('iframe');
 			iframe.setAttribute('src', 'https://www.youtube.com/embed/TEBpc9Q9TV8');
 			iframe.setAttribute('allowfullscreen', '');
@@ -103,46 +117,6 @@
 			return iframe;
 		}
 	}
-
-	// function findVideo() {
-	// 	var video = document.querySelector('.video__container');
-	//
-	// 	if (video) {
-	// 		setupVideo(video);
-	// 	}
-	// }
-	//
-	// function setupVideo(video) {
-	// 	var link = document.querySelector('.video__link');
-	//
-	// 	if (link) {
-	// 		link.removeAttribute('href');
-	// 	}
-	//
-	// 	var button = document.querySelector('.video__button');
-	//
-	// 	if (button) {
-	// 		button.addEventListener('click', function () {
-	// 			var iframe = createIframe();
-	// 			link.remove();
-	// 			button.remove();
-	// 			video.appendChild(iframe);
-	// 		});
-	// 	}
-	//
-	// 	video.classList.add('video__container--enabled');
-	// }
-	//
-	// function createIframe() {
-	// 	var iframe = document.createElement('iframe');
-	// 	iframe.setAttribute('src', 'https://www.youtube.com/embed/bnzHECC0Z8A?rel=0&showinfo=0&autoplay=1');
-	// 	iframe.setAttribute('allowfullscreen', '');
-	// 	iframe.classList.add('video__media');
-	//
-	// 	return iframe;
-	// }
-	//
-	// findVideo();
 
 	class Form
 	{
@@ -162,7 +136,7 @@
 			});
 		}
 
-		submitHandler ()
+		submitHandler()
 		{
 			this.deleteChildrenElements(this.form);
 			this.renderTemplate(this.form, this.successTemplate());
@@ -173,7 +147,7 @@
 			parentElement.insertAdjacentHTML(place, template);
 		}
 
-		deleteChildrenElements (list)
+		deleteChildrenElements(list)
 		{
 			while (list.firstChild)
 			{
@@ -181,7 +155,7 @@
 			}
 		}
 
-		successTemplate ()
+		successTemplate()
 		{
 			return (
 				`<p class="feedback__slogan"><b>Узнайте о запуске сервиса первым</b></p>

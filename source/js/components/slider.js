@@ -12,7 +12,8 @@ export default class Slider {
 		this.moveRight = this.moveRight.bind(this);
 	}
 
-	init() {
+	init()
+	{
 		this.setActiveSlide();
 		this.slidesWidth = this.slides[this.activeSlideIndex].offsetWidth;
 		this.move();
@@ -20,20 +21,25 @@ export default class Slider {
 		this.buttonRight.addEventListener('click', this.moveRight);
 	}
 
-	setActiveSlide() {
+	setActiveSlide()
+	{
 		this.slides[this.activeSlideIndex].classList.add("slider__item--active", "designs__item--active");
 	}
 
-	removeActiveSlide() {
+	removeActiveSlide()
+	{
 		this.slides[this.activeSlideIndex].classList.remove("slider__item--active", "designs__item--active");
 	}
 
-	move() {
+	move()
+	{
 		this.sliderContainer.style.transform = `translateX(-${this.slidesWidth * this.activeSlideIndex}px)`;
 	}
 
-	moveRight() {
-		if (this.activeSlideIndex === 0) {
+	moveRight()
+	{
+		if (this.activeSlideIndex === 0)
+		{
 			this.buttonLeft.disabled = false;
 		}
 
@@ -43,14 +49,17 @@ export default class Slider {
 		this.move();
 
 
-		if (this.activeSlideIndex === this.slidesCount - 1) {
+		if (this.activeSlideIndex === this.slidesCount - 1)
+		{
 			this.buttonRight.disabled = true;
 			return;
 		}
 	}
 
-	moveLeft() {
-		if (this.activeSlideIndex === this.slidesCount - 1) {
+	moveLeft()
+	{
+		if (this.activeSlideIndex === this.slidesCount - 1)
+		{
 			this.buttonRight.disabled = false;
 		}
 
@@ -59,7 +68,8 @@ export default class Slider {
 		this.setActiveSlide();
 		this.move();
 
-		if (this.activeSlideIndex === 0) {
+		if (this.activeSlideIndex === 0)
+		{
 			this.buttonLeft.disabled = true;
 		}
 	}
