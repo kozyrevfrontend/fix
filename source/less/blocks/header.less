@@ -4,7 +4,7 @@ header
 
   display: flex;
   flex-direction: column;
-  width: 1880px - (20px * 2);
+  max-width: 1880px - (20px * 2);
   height: 100vh;
   padding: 0 90px;
   .centered();
@@ -160,5 +160,52 @@ header
 	{
 	  transform: scaleX(0.73);
 	}
+  }
+}
+
+@media (max-width: 1600px)
+{
+  header
+  {
+	height: auto;
+  }
+
+  .header__video
+  {
+	position: static;
+  }
+
+  .header__bottom
+  {
+	display: none;
+  }
+
+  .header__main
+  {
+	margin-top: 50px;
+	margin-bottom: 50px;
+  }
+
+  .header__main-title
+  {
+	max-width: 508px;
+	margin: 0 auto 26px;
+
+	text-align: center;
+
+	transform: translateX(0);
+  }
+
+  .header__main-description
+  {
+	max-width: 456px;
+	margin: 0 auto 44px;
+
+	text-align: center;
+  }
+
+  .header__main-wrapper
+  {
+	.centered();
   }
 }
